@@ -30,10 +30,9 @@ def roller(num_rolls):
 # name: times_rolled
 # parameter: list of values
 # return:  count_list
-def times_rolled(list_of_values,num_rolls):
+def times_rolled(list_of_values):
     sums_list = []
     count = 2
-    sum_count = 0
     while count <= 12 :
         sum_count = list_of_values.count(count)
         sums_list.append(sum_count)
@@ -47,8 +46,8 @@ def times_rolled(list_of_values,num_rolls):
 def sum_chart(sums_list):
     count = 2
     sum_count = 0
-    while count < 12:
-        print(f"Sum of {count}", '*' * sums_list[sum_count])
+    while count <= 12:
+        print(f"Sum of {count:02}", '*' * sums_list[sum_count])
         count += 1
         sum_count += 1
 
@@ -56,7 +55,7 @@ def sum_chart(sums_list):
 def main():
     num_rolls = roll_input()
     list_of_values = roller(num_rolls)
-    sums_list = times_rolled(list_of_values,num_rolls)
+    sums_list = times_rolled(list_of_values)
 
     print(f"\nRolling {num_rolls} pairs of dice.")
     print(sums_list)
