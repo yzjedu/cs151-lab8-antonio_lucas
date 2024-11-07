@@ -1,3 +1,13 @@
+# Programmers: Lucas Podowski, Antonio Dueno
+# Course: CS151, Zelalem Yalew
+# Due Date: 11/6
+# Programming Assignment: Lab 08
+# Problem Statement: In this lab we were instructed to create a program that calculated the number of times a number was
+#                    rolled after rolling a pair of dice, after rolling the dice a number of times indicated by the user.
+# Data In: Number of times user wants dice to be rolled.
+# Data Out: List of number of times a number was rolled.
+# Credits: Class notes
+
 import random
 
 # Purpose: prompting user to input the number of times they want to roll dice
